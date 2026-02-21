@@ -1,8 +1,8 @@
-# genaiPrompts
+# Useful Prompts
 
 ## Use the 80/20 principle to learn faster
 ```text
-I want to learn about (insert topic). 
+I want to learn about [INSERT TOPIC]. 
 Determine and share the 20% of the topic's lessons that are most crucial to understanding the remaining 80%
 ```
 
@@ -11,13 +11,13 @@ Determine and share the 20% of the topic's lessons that are most crucial to unde
 Break this task into the smallest possible steps.
 Order them so I can finish fast.
 Skip anything optional.
-Task: [paste task]
+Task: [PASTE TASK]
 ```
 
 ## Chain of Thought
 ```text
-You are an expert at (INSERT FIELD) with over 11 years of experience.
-Advise me on (YOUR QUESTIONS).
+You are an expert at [INSERT FIELD] with over 11 years of experience.
+Advise me on [YOUR QUESTIONS].
 Let's think step by step.
 ```
 
@@ -26,7 +26,7 @@ Let's think step by step.
 I need to decide between these options.
 List pros and cons briefly.
 Then tell me which option makes sense and why.
-Options: [list options]
+Options: [LIST OPTIONS]
 ```
 
 ## The Problem Framer
@@ -36,10 +36,12 @@ Structure it as:
 1. What is happening
 2. Why it matters
 3. What I suggest we do
-Problem: [describe issue]
+Problem: [DESCRIBE ISSUE]
 ```
-
-## Meta Prompt to Make Replies Better
+## Prompt Analytics To Improve Requests
+Use these to analyze the original prompt and re-generate for better GenAI engagement 
+### Meta Prompt to Make Replies Better
+Run this prompt first before asking your question
 ```text
 Whenever I ask a question, do the following before answering:
 1. Rewrite my question into the best possible version of the question an expert would ask.
@@ -50,7 +52,19 @@ If there is a decision point, use a diamond.
 If there is no decision point, still use boxes + arrows.
 ```
 
-## Cognitive Mesh Protocol
+### Friction Remover Prompt
+```text
+<role> You are a Prompt Logic Architect.</role> 
+<task> Analyze the user's intent below and rewrite it into a high-performance prompt using the 'Context-Task-Constraint' framework. </task>
+<rules>
+Identify what the user forgot to mention (tone, audience, or length).
+Add a 'Negative Constraint' (what the AI should NOT do).
+Keep the output clean and copy-paste ready.
+</rules>
+[PROMPT TO EVALUATE]
+```
+### Cognitive Mesh Protocol
+Run this prompt first before asking your question
 ```text
 REASONING PROTOCOL:
 1. Expand first: Generate multiple possibilities before converging
@@ -71,4 +85,46 @@ OUTPUT REQUIREMENTS:
 1. Detailed SWOT Analysis.
 2. Updated research data (2024–2025).
 3. Indication of creative opportunities exploitable in 2026.
+```
+## Generate Charts
+### Initial Data Analysis Prompt
+```text
+I uploaded a dataset. Your job is to produce decision-grade visualizations.
+
+First, inspect the dataset and write a 10-bullet data audit:
+columns, types, missing values, duplicates, weird categories, time granularity, likely data quality risks
+Then propose 5 different chart options that answer the most important decision questions in this data:
+for each: chart type, what it shows, why it matters, and the exact fields used
+
+Create the best 3 charts with these rules:
+clean design, minimal colors, clear title, labeled axes with units, readable ticks, no clutter
+annotate key points (peaks, drops, breakpoints)
+include 1 sentence takeaway under each chart
+
+Validation step:
+list 5 checks you performed to ensure the charts are accurate
+if anything is ambiguous, stop and ask only the minimum clarifying question
+
+Output:
+deliver the charts and also provide the code used to generate them in Python (matplotlib) or JavaScript (Plotly), my choice: Python
+```
+### Ask for 3 chart drafts & critique
+```text
+Generate 3 chart variants, then critique each like a data viz lead and choose the winner.
+```
+### Build a chart ladder
+```text
+Make the simplest chart possible. If it fails to answer the decision question, add one layer of complexity and justify it.
+```
+### Use it as a data detective before it’s a designer
+```text
+List all assumptions required to interpret this chart correctly. Flag the ones likely to be false.
+```
+### Force reproducibility
+```text
+Output the exact transform steps and code so the chart is reproducible from raw file
+```
+### Make it fight itself
+```text
+Argue against your own takeaway. What alternative explanations fit the data?
 ```
