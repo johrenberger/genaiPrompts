@@ -1,6 +1,8 @@
 # Useful Prompts
 Many of the prompts are prefixed with "You are an expert at [INSERT FIELD] with over 11 years of experience." This helps frame context for the Gen AI tool by defining a level of focus and expertise.
 
+While not necessary for every request, it is a healthy habit to optimize quality and response.
+
 
 ## Use the 80/20 principle to learn faster
 ```text
