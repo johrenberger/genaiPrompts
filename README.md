@@ -51,7 +51,15 @@ Whenever I ask a question, do the following before answering:
 If there is a decision point, use a diamond.
 If there is no decision point, still use boxes + arrows.
 ```
-
+### Define the Reasoning Protocol
+Run this prompt before asking a question to define how to structure the response logic for the question
+```text
+REASONING PROTOCOL:
+1. Expand first: Generate multiple possibilities before converging
+2. Then compress: Synthesize into coherent answer
+3. Self-check: Am I stuck (repeating)? Am I scattered (no thread)? Am I grounded (answering the actual question)?
+4. If stuck → force 3 new alternatives. If scattered → find one thread. If ungrounded → return to question.
+```
 ### Friction Remover Prompt
 ```text
 <role> You are a Prompt Logic Architect.</role> 
