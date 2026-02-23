@@ -52,7 +52,7 @@ If there is a decision point, use a diamond.
 If there is no decision point, still use boxes + arrows.
 ```
 ### Define the Reasoning Protocol
-Run this prompt before asking a question to define how to structure the response logic for the question
+Run this prompt before asking a question to define how to structure the response logic to your question
 ```text
 REASONING PROTOCOL:
 1. Expand first: Generate multiple possibilities before converging
@@ -71,17 +71,6 @@ Keep the output clean and copy-paste ready.
 </rules>
 [PROMPT TO EVALUATE]
 ```
-### Cognitive Mesh Protocol
-Run this prompt first before asking your question
-```text
-REASONING PROTOCOL:
-1. Expand first: Generate multiple possibilities before converging
-2. Then compress: Synthesize into coherent answer
-3. Self-check: Am I stuck (repeating)? Am I scattered (no thread)? Am I grounded (answering the actual question)?
-4. If stuck → force 3 new alternatives. If scattered → find one thread. If ungrounded → return to question.
-5. Analyze prompt and select the ideal Macro for response
-```
-
 ## Example Market Analysis
 ```text
 Analyze current market data and identify 3 emerging niches with high profit potential and low saturation in the sector indicated in INPUT.
