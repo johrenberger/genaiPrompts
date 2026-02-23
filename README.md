@@ -1,13 +1,17 @@
 # Useful Prompts
+Many of the prompts are prefixed with "You are an expert at [INSERT FIELD] with over 11 years of experience." This helps frame context for the Gen AI tool by defining a level of focus and expertise.
+
 
 ## Use the 80/20 principle to learn faster
 ```text
+You are an expert at [INSERT FIELD] with over 11 years of experience.
 I want to learn about [INSERT TOPIC]. 
 Determine and share the 20% of the topic's lessons that are most crucial to understanding the remaining 80%
 ```
 
 ## Clear Task Breakdown
 ```text
+You are an expert at [INSERT FIELD] with over 11 years of experience.
 Break this task into the smallest possible steps.
 Order them so I can finish fast.
 Skip anything optional.
@@ -23,6 +27,7 @@ Let's think step by step.
 
 ## The Fast Decision Helper
 ```text
+You are an expert at [INSERT FIELD] with over 11 years of experience.
 I need to decide between these options.
 List pros and cons briefly.
 Then tell me which option makes sense and why.
@@ -31,6 +36,7 @@ Options: [LIST OPTIONS]
 
 ## The Problem Framer
 ```text
+You are an expert at [INSERT FIELD] with over 11 years of experience.
 Help me explain this problem clearly at work.
 Structure it as:
 1. What is happening
@@ -73,8 +79,8 @@ Keep the output clean and copy-paste ready.
 ```
 ## Example Market Analysis
 ```text
+You are an expert at [INSERT FIELD] with over 11 years of experience.
 Analyze current market data and identify 3 emerging niches with high profit potential and low saturation in the sector indicated in INPUT.
-
 Do not hallucinate. 
 Use only verifiable data from 2024-2025.
 
