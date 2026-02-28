@@ -46,6 +46,24 @@ Structure it as:
 3. What I suggest we do
 Problem: [DESCRIBE ISSUE]
 ```
+
+## Evaluate Logic of Response By AI
+```text
+Don't give me an answer yet.
+
+First:
+1. Tell me what assumptions you're making about my situation
+2. Tell me what information would change your answer significantly
+3. Tell me what the most common mistake is when people ask 
+   you this question
+
+Then ask me the 2 questions that would make your answer 
+actually useful for my specific situation.
+
+Only after I answer those — write the output.
+
+My request: [paste your actual request here]
+```
 ## Prompt Analytics To Improve Requests
 Use these to analyze the original prompt and re-generate for better GenAI engagement 
 ### Meta Prompt to Make Replies Better
