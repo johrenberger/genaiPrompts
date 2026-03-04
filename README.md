@@ -1,7 +1,12 @@
 # Useful Prompts
-Many of the prompts are prefixed with "You are an expert at [INSERT FIELD] with over 11 years of experience." This helps frame context for the Gen AI tool by defining a level of focus and expertise.
 
-While not necessary for every request, it is a healthy habit to optimize quality and response.
+[GeneratingCharts.md](https://github.com/johrenberger/genaiPrompts/blob/main/GeneratingCharts.md) - Prompts for analyzing data and generating visualization of the data
+IdeaDestroyer.md - Prompt for evaluating an idea you have and providing feedback on its weakness. Useful for challenging the quality of your ideas and iterating to improve it.
+IncidentResponse.md - Prompt for generating Information Security quality incident response documentation
+PromptAnalytics.md - Prompts to improve the quality of what you pass to your Gen AI chat to improve the organization and output from Gen AI.
+
+
+Many of the prompts are prefixed with "You are an expert at [INSERT FIELD] with over 11 years of experience." This helps frame context for the Gen AI tool by defining a level of focus and expertise. While not necessary for every request, it is a healthy habit to optimize quality and response.
 
 
 ## Use the 80/20 principle to learn faster
