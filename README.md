@@ -1,10 +1,10 @@
 # Useful Prompts
 ## Specialized Prompt Pages
-1. [PromptAnalytics.md](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md) - Prompts to improve the quality of what you pass to your Gen AI chat to improve the organization and output from Gen AI.<br/>
-2. [IdeaDestroyer.md](https://github.com/johrenberger/genaiPrompts/blob/main/IdeaDestroyer.md) - Prompt for evaluating an idea you have and providing feedback on its weakness. Useful for challenging the quality of your ideas and iterating to improve it.<br/>
-3. [IncidentResponse.md](https://github.com/johrenberger/genaiPrompts/blob/main/IncidentResponse.md) - Prompt for generating Information Security quality incident response documentation.<br/>
-4. [LearingNewSkills.md](https://github.com/johrenberger/genaiPrompts/blob/main/LearningNewSkills.md) - Prompts for learning new skills in several different strategies depending on your learning needs.<br/>
-5. [GeneratingCharts.md](https://github.com/johrenberger/genaiPrompts/blob/main/GeneratingCharts.md) - Prompts for analyzing data and generating visualization of the data.<br/>
+1. [Prompt Analytics](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md) - Prompts to improve the quality of what you pass to your Gen AI chat to improve the organization and output from Gen AI.<br/>
+2. [Idea Destroyer](https://github.com/johrenberger/genaiPrompts/blob/main/IdeaDestroyer.md) - Prompt for evaluating an idea you have and providing feedback on its weakness. Useful for challenging the quality of your ideas and iterating to improve it.<br/>
+3. [Incident Response](https://github.com/johrenberger/genaiPrompts/blob/main/IncidentResponse.md) - Prompt for generating Information Security quality incident response documentation.<br/>
+4. [Learning New Skills](https://github.com/johrenberger/genaiPrompts/blob/main/LearningNewSkills.md) - Prompts for learning new skills in several different strategies depending on your learning needs.<br/>
+5. [Generating Charts](https://github.com/johrenberger/genaiPrompts/blob/main/GeneratingCharts.md) - Prompts for analyzing data and generating visualization of the data.<br/>
 
 
 ## Everyday Prompts
