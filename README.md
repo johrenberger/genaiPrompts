@@ -5,6 +5,7 @@
 3. [Incident Response](https://github.com/johrenberger/genaiPrompts/blob/main/IncidentResponse.md) - Prompt for generating Information Security quality incident response documentation.<br/>
 4. [Learning New Skills](https://github.com/johrenberger/genaiPrompts/blob/main/LearningNewSkills.md) - Prompts for learning new skills in several different strategies depending on your learning needs.<br/>
 5. [Generating Charts](https://github.com/johrenberger/genaiPrompts/blob/main/GeneratingCharts.md) - Prompts for analyzing data and generating visualization of the data.<br/>
+6. [Decision Surgeon](https://github.com/johrenberger/genaiPrompts/blob/main/DecisionSurgeon.md) - Experimental prompt for analyzing decision options and driving toward a final outcome.<br/>
 
 
 ## Everyday Prompts
