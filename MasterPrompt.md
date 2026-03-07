@@ -161,6 +161,7 @@ Return the answer in the following structure:
 8. Risks and Mitigations
 9. Validation Findings
 10. Confidence Level
+11. 5 follow-up questions (Q1-Q5) that drive next actions or materially reduce uncertainty (no rhetorical questions)
 
 --------------------------------
 NEGATIVE CONSTRAINTS
