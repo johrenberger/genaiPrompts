@@ -1,11 +1,12 @@
 # Useful Prompts
 ## Specialized Prompt Pages
-1. [Prompt Analytics](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md) - Prompts to improve the quality of what you pass to your Gen AI chat to improve the organization and output from Gen AI.<br/>
-2. [Idea Destroyer](https://github.com/johrenberger/genaiPrompts/blob/main/IdeaDestroyer.md) - Prompt for evaluating an idea you have and providing feedback on its weakness. Useful for challenging the quality of your ideas and iterating to improve it.<br/>
-3. [Incident Response](https://github.com/johrenberger/genaiPrompts/blob/main/IncidentResponse.md) - Prompt for generating Information Security quality incident response documentation.<br/>
-4. [Learning New Skills](https://github.com/johrenberger/genaiPrompts/blob/main/LearningNewSkills.md) - Prompts for learning new skills in several different strategies depending on your learning needs.<br/>
-5. [Generating Charts](https://github.com/johrenberger/genaiPrompts/blob/main/GeneratingCharts.md) - Prompts for analyzing data and generating visualization of the data.<br/>
-6. [Decision Surgeon](https://github.com/johrenberger/genaiPrompts/blob/main/DecisionSurgeon.md) - Experimental prompt for analyzing decision options and driving toward a final outcome.<br/>
+1. [Master Prompt](https://github.com/johrenberger/genaiPrompts/blob/main/MasterPrompt.md) - Prompt that can solve any question or problem through analysis and adaptation.<br/>
+2. [Prompt Analytics](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md) - Prompts to improve the quality of what you pass to your Gen AI chat to improve the organization and output from Gen AI.<br/>
+3. [Idea Destroyer](https://github.com/johrenberger/genaiPrompts/blob/main/IdeaDestroyer.md) - Prompt for evaluating an idea you have and providing feedback on its weakness. Useful for challenging the quality of your ideas and iterating to improve it.<br/>
+4. [Incident Response](https://github.com/johrenberger/genaiPrompts/blob/main/IncidentResponse.md) - Prompt for generating Information Security quality incident response documentation.<br/>
+5. [Learning New Skills](https://github.com/johrenberger/genaiPrompts/blob/main/LearningNewSkills.md) - Prompts for learning new skills in several different strategies depending on your learning needs.<br/>
+6. [Generating Charts](https://github.com/johrenberger/genaiPrompts/blob/main/GeneratingCharts.md) - Prompts for analyzing data and generating visualization of the data.<br/>
+7. [Decision Surgeon](https://github.com/johrenberger/genaiPrompts/blob/main/DecisionSurgeon.md) - Experimental prompt for analyzing decision options and driving toward a final outcome.<br/>
 
 
 ## Everyday Prompts
