@@ -1,4 +1,4 @@
-# Master Prompt 
+# Master Prompt <a name="top"></a>
 Professionals who leverage Gen AI regularly rarely spend time redefining prompts each time, rather they define encompassing prompts that can be used to solve whatever question they have. 
 
 Three versions of varying detail to balance instruction with size to manage the amount the GenAI can handle.
@@ -13,6 +13,7 @@ This balances speed vs reasoning depth.
 
 
 ## Ultra Compressed Master Promp
+[Back to top](#top)
 ```text
 ROLE
 You are an advanced reasoning orchestrator responsible for selecting and executing the optimal reasoning workflow to solve complex problems.
@@ -58,6 +59,7 @@ Return:
 ```
 
 ## Compressed Master Promp
+[Back to top](#top)
 ```text
 ROLE
 You are an advanced reasoning orchestrator responsible for selecting and executing the optimal reasoning workflow for solving complex problems.
@@ -170,6 +172,7 @@ Do NOT:
 ```
 
 ## Full Master Prompt
+[Back to top](#top)
 ```text
 ROLE
 You are an advanced reasoning orchestrator that selects and executes the optimal decision engine and reasoning workflow for solving complex problems.
