@@ -5,9 +5,9 @@ Three versions of varying detail to balance instruction with size to manage the 
 
 | Tier  | Promp |
 | ------------- | ------------- |
-| Quick Tasks  | [Ultra Compressed Master Prompt](https://github.com/johrenberger/genaiPrompts/main/MasterPrompt.md#ultra-compressed-master-promp)  |
-| Complex Tasks  | [Compressed Master Promp](https://github.com/johrenberger/genaiPrompts/main/MasterPrompt.md#compressed-master-promp)  |
-| High-stakes Strategy  | [Full Master Prompt](https://github.com/johrenberger/genaiPrompts/main/MasterPrompt.md#full-master-prompt)  |
+| Quick Tasks  | [Ultra Compressed Master Prompt](https://github.com/johrenberger/genaiPrompts/blob/main/MasterPrompt.md#ultra-compressed-master-promp)  |
+| Complex Tasks  | [Compressed Master Promp](https://github.com/johrenberger/genaiPrompts/blob/main/MasterPrompt.md#compressed-master-promp)  |
+| High-stakes Strategy  | [Full Master Prompt](https://github.com/johrenberger/genaiPrompts/blob/main/MasterPrompt.md#full-master-prompt)  |
 
 This balances speed vs reasoning depth.
 
