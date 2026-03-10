@@ -1,7 +1,7 @@
 # Master Prompt <a name="top"></a>
 Professionals who leverage Gen AI regularly rarely spend time redefining prompts each time, rather they define encompassing prompts that can be used to solve whatever question they have. 
 
-Three versions of varying detail to balance instruction with size to manage the amount the GenAI can handle.
+Here are three versions of varying detail to balance instruction with size to manage the amount the GenAI can handle.
 
 | Tier  | Promp |
 | ------------- | ------------- |
