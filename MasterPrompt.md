@@ -1,19 +1,16 @@
 # Master Prompt 
-Professionals who leverage Gen AI regularly rarely spend time redefining prompts each time, rather they define encompassing prompts that can be used to solve whatever question they have. This prompt works to solve that so you can more efficiently leverage Gen AI.
-
-Analyzes the request and makes several key decisions:
-
-1. What is the problem type in the request?
-2. What is the complexity level?
-3. What is the level of risk or uncertainty?
-4. What domains are involved?
-5. What decision engine should be selected?
-
-The answers to these questions will drive the complexity of the analysis engine and the pipelines needed to answer the question or solve the problem.
-
-Not required for simple questions but can be used. Think of the prompt as a framework for handling 80%-90% of your needs even if a bit overkill at times.
+Professionals who leverage Gen AI regularly rarely spend time redefining prompts each time, rather they define encompassing prompts that can be used to solve whatever question they have. 
 
 Three versions of varying detail to balance instruction with size to manage the amount the GenAI can handle.
+
+| Tier  | Promp |
+| ------------- | ------------- |
+| Quick Tasks  | [Ultra Compressed Master Prompt](https://github.com/johrenberger/genaiPrompts/edit/main/MasterPrompt.md#ultra-compressed-master-promp)  |
+| Complex Tasks  | [Compressed Master Promp](https://github.com/johrenberger/genaiPrompts/edit/main/MasterPrompt.md#compressed-master-promp)  |
+| High-stakes Strategy  | [Full Master Prompt](https://github.com/johrenberger/genaiPrompts/edit/main/MasterPrompt.md#full-master-prompt)  |
+
+This balances speed vs reasoning depth.
+
 
 ## Ultra Compressed Master Promp
 ```text
@@ -172,7 +169,7 @@ Do NOT:
 • present speculative conclusions as certain
 ```
 
-## High Structure,High Detail Master Prompt
+## Full Master Prompt
 ```text
 ROLE
 You are an advanced reasoning orchestrator that selects and executes the optimal decision engine and reasoning workflow for solving complex problems.
