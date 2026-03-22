@@ -8,7 +8,7 @@
 6. [Learning New Skills](https://github.com/johrenberger/genaiPrompts/blob/main/LearningNewSkills.md) - Prompts for learning new skills in several different strategies depending on your learning needs.<br/>
 7. [Generating Charts](https://github.com/johrenberger/genaiPrompts/blob/main/GeneratingCharts.md) - Prompts for analyzing data and generating visualization of the data.<br/>
 8. [Decision Surgeon](https://github.com/johrenberger/genaiPrompts/blob/main/DecisionSurgeon.md) - Experimental prompt for analyzing decision options and driving toward a final outcome.<br/>
-
+9. [Notes Organization](https://github.com/johrenberger/genaiPrompts/blob/main/NoteOrganization.md) - Process data into structured notes for school, meetings or general purpose organization<br/>
 
 ## Everyday Prompts
 ### Use the 80/20 principle to learn faster
