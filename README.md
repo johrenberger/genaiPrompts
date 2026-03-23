@@ -1,5 +1,8 @@
 # Useful Prompts
-## Specialized Prompt Pages
+A set pages with prompts categorized for different needs to help optimize your Gen AI communication. Experts don't spend time inventing prompts, they leverage and reuse existing prompts to drive efficiency with the different tools available.
+
+Start with Everyday Prompts to get familiar with common needs, additional pages target different specializations.
+## Prompt Pages
 1. [Everyday Prompts](https://github.com/johrenberger/genaiPrompts/blob/main/EverydayPrompts.md) - Prompts for common, everyday needs<br/>
 2. [Master Prompt](https://github.com/johrenberger/genaiPrompts/blob/main/MasterPrompt.md) - Prompt that can solve any question or problem through analysis and adaptation.<br/>
 3. [Prompt Personalities](https://github.com/johrenberger/genaiPrompts/blob/main/PromptPersonalities.md) - Prompts to define the response style you need and the different use cases to apply them to.<br/>
