@@ -1,5 +1,12 @@
 # Set of Prompts for Learning Things
 
+## Socratic Learning Prompt
+```text
+I want to learn [topic].
+Instead of explaining everything at once, ask me questions that guide me to understand the concept myself.
+Start with the most fundamental question. Adjust difficulty based on my answers.
+If I'm stuck, give a hint, not the answer.
+```
 ## The Full Skill Blueprint Prompt
 ```text
 Act as a learning strategist and expert teacher.
