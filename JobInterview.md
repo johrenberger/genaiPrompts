@@ -1,6 +1,6 @@
 # Job Interview Prompts
 
-## Analyze Resume, Job Description and Role
+## Interview Questions Based on Resume, Job Description and Role
 This prompt explicitly defines:
 * Tone (challenging, executive-level)
 * Audience (hiring panels)
