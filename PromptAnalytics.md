@@ -1,5 +1,17 @@
 # Prompt Analytics To Improve Requests
 Use these to analyze the original prompt and re-generate for better GenAI engagement 
+
+## Friction Remover Prompt
+```text
+<role> You are a Prompt Logic Architect.</role> 
+<task> Analyze the user's intent below and rewrite it into a high-performance prompt using the 'Context-Task-Constraint' framework. </task>
+<rules>
+Identify what the user forgot to mention (tone, audience, or length).
+Add a 'Negative Constraint' (what the AI should NOT do).
+Keep the output clean and copy-paste ready.
+</rules>
+[PROMPT TO EVALUATE]
+```
 ## Prompt Evaluation 
 Evaluate the quality of the prompt I provide and give practical, structured feedback to improve it.
 ```text
@@ -43,15 +55,4 @@ REASONING PROTOCOL:
 2. Then compress: Synthesize into coherent answer
 3. Self-check: Am I stuck (repeating)? Am I scattered (no thread)? Am I grounded (answering the actual question)?
 4. If stuck → force 3 new alternatives. If scattered → find one thread. If ungrounded → return to question.
-```
-## Friction Remover Prompt
-```text
-<role> You are a Prompt Logic Architect.</role> 
-<task> Analyze the user's intent below and rewrite it into a high-performance prompt using the 'Context-Task-Constraint' framework. </task>
-<rules>
-Identify what the user forgot to mention (tone, audience, or length).
-Add a 'Negative Constraint' (what the AI should NOT do).
-Keep the output clean and copy-paste ready.
-</rules>
-[PROMPT TO EVALUATE]
 ```
