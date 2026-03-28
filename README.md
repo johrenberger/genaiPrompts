@@ -15,3 +15,4 @@ Start with Everyday Prompts to get familiar with common needs, additional pages 
 10. [Notes Organization](https://github.com/johrenberger/genaiPrompts/blob/main/NoteOrganization.md) - Process data into structured notes for school, meetings or general purpose organization<br/>
 11. [Fun Prompts](https://github.com/johrenberger/genaiPrompts/blob/main/FunPrompts.md) - Interesting prompts that provide potentially useful capabilities<br/>
 12. [Code Review](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md) - Set of prompts for reviewing code<br/>
+13. [Job Interview](JobInterview.md) - Prompts to generate effective interview questions<br/>
