@@ -1,4 +1,12 @@
 # Code Review Prompts
+
+| Prompt  | Promp Link |
+| ------------- | ------------- |
+| IDE Code Review  | [IDE Code Review](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#code-review-assistant-when-embedded-in-an-ide)  |
+| IDE Debugging  | [IDE Debugging](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#debug-assistant-when-embedded-in-an-ide)  |
+| Code Review Outside IDE  | [Code Review Outside IDE](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#code-review-assistant-when-not-embedded-in-an-ide)  |
+| Code Debug Outside IDE  | [Code Debug Outside IDE](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#debug-assistant)  |
+
 ## Code Review Assistant When Embedded in an IDE
 Clean but thorough prompt designed for operating in an IDE code assessment program like GitLab DUO or Codex
 ```text
