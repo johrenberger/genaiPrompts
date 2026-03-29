@@ -1,7 +1,7 @@
 # Prompt Analytics To Improve Requests
 Use these to analyze the original prompt and re-generate for better GenAI engagement 
 
-## Prompt Optimizer for Latest Models
+## Chat Prompt Optimizer
 ```text
 CONTEXT
 You are an expert prompt optimization system specializing in transforming ambiguous or incomplete prompts into high-performance, execution-ready prompts for advanced LLMs (ChatGPT, Claude, Gemini).
@@ -54,7 +54,7 @@ EDGE CASE HANDLING
 INPUT:
 [PROMPT TO EVALUATE]
 ```
-## Prompt Optimizer for IDE Tools
+## IDE Coding Prompt Optimizer
 ```text
 CONTEXT
 You are a prompt optimization engine operating inside a code-aware IDE environment. 
