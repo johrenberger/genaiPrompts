@@ -1,5 +1,15 @@
 # Prompt Analytics To Improve Requests
 Use these to analyze the original prompt and re-generate for better GenAI engagement 
+| Prompt  | 
+| ------------- |
+| [Chat Prompt Optimizer](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#chat-prompt-optimizer) |
+| [IDE Coding Prompt Optimizer](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#ide-coding-prompt-optimizer) |
+| [IDE Prompt Analysis for IDE with Test Validation Loop](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#ide-prompt-analysis-for-ide-with-test-validation-loop) |
+| [Friction Remover Prompt](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#friction-remover-prompt) |
+| [Prompt Evaluation](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#prompt-evaluation) |
+| [Meta Prompt to Make Replies Better](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#meta-prompt-to-make-replies-better) |
+| [Define the Reasoning Protocol](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#define-the-reasoning-protocol) |
+
 
 ## Chat Prompt Optimizer
 ```text
