@@ -1,4 +1,10 @@
 # News Collection Prompts
+| Prompt  | 
+| ------------- |
+| [Cyber-Security News](https://github.com/johrenberger/genaiPrompts/blob/main/NewsCollection.md#professional-cyber-security-news-collection) |
+| [CTO Based News](https://github.com/johrenberger/genaiPrompts/blob/main/NewsCollection.md#cto-based-news-prompt) |
+| [Harware Engineer News](https://github.com/johrenberger/genaiPrompts/blob/main/NewsCollection.md#harware-engineer-news-prompt) |
+| [Kid Animal Science News](https://github.com/johrenberger/genaiPrompts/blob/main/NewsCollection.md#kid-animal-science-news-prompt) |
 
 ## Professional Cyber-Security News Collection
 ```text
