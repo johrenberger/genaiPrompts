@@ -4,7 +4,7 @@ Use these to analyze the original prompt and re-generate for better GenAI engage
 | ------------- |
 | [Chat Prompt Optimizer](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#chat-prompt-optimizer) |
 | [IDE Coding Prompt Optimizer](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#ide-coding-prompt-optimizer) |
-| [GitLab Duo IDE Prompt Optimizer](https://github.com/johrenberger/genaiPrompts/edit/main/PromptAnalytics.md#gitlab-duo-specific-ide-prompt-optimizer)
+| [GitLab Duo IDE Prompt Optimizer](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#gitlab-duo-specific-ide-prompt-optimizer)
 | [IDE Prompt Analysis for IDE with Test Validation Loop](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#ide-prompt-analysis-for-ide-with-test-validation-loop) |
 | [Friction Remover Prompt](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#friction-remover-prompt) |
 | [Prompt Evaluation](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md#prompt-evaluation) |
