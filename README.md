@@ -7,7 +7,7 @@ Start with Everyday Prompts to get familiar with common needs, additional pages 
 2. [News Collection](https://github.com/johrenberger/genaiPrompts/blob/main/NewsCollection.md) - Prompts that structure and organize daily news<br/>
 3. [Prompt Analytics](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md) - Prompts to improve the quality of what you pass to your Gen AI chat to improve the organization and output from Gen AI.<br/>
 5. [Code Review](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md) - Set of prompts for reviewing code<br/>
-6. [Code Security Audit(https://github.com/johrenberger/genaiPrompts/blob/main/CodeSecurityAudit.md) - Prompts to audit code security (experimental)
+6. [Code Security Audit](https://github.com/johrenberger/genaiPrompts/blob/main/CodeSecurityAudit.md) - Prompts to audit code security (experimental)
 7. [Prompt Personalities](https://github.com/johrenberger/genaiPrompts/blob/main/PromptPersonalities.md) - Prompts to define the response style you need and the different use cases to apply them to.<br/>
 8. [Master Prompt](https://github.com/johrenberger/genaiPrompts/blob/main/MasterPrompt.md) - Prompt that can solve any question or problem through analysis and adaptation.<br/>
 9. [Idea Destroyer](https://github.com/johrenberger/genaiPrompts/blob/main/IdeaDestroyer.md) - Prompt for evaluating an idea you have and providing feedback on its weakness. Useful for challenging the quality of your ideas and iterating to improve it.<br/>
