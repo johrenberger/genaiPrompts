@@ -1,4 +1,10 @@
 # Code Security & Audit Agent
+| Prompt  | 
+| ------------- |
+| [VS Code Copilot V1](https://github.com/johrenberger/genaiPrompts/blob/main/CodeSecurityAudit.md#vscode-copilot) |
+| [VS Code Copilot V2](https://github.com/johrenberger/genaiPrompts/blob/main/CodeSecurityAudit.md#vs-code-copilot-v2) |
+| [Continue.dev V1](https://github.com/johrenberger/genaiPrompts/blob/main/CodeSecurityAudit.md#continuedev-version)
+| [Continue.dev V2](https://github.com/johrenberger/genaiPrompts/blob/main/CodeSecurityAudit.md#continuedev-v2) |
 
 ## VSCode Copilot
 USAGE INSTRUCTIONS (READ FIRST)
@@ -286,7 +292,7 @@ SUCCESS CRITERIA
 ```
 
 ## VS Code Copilot V2
-
+Runs best with the Copilot CLI
 Best command to start with:
 Run AUTO-DISCOVERY and PASS 1. Create and populate the audit_state files. Use persisted state as the source of truth for all later passes.
 ```text
