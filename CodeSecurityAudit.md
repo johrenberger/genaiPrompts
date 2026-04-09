@@ -292,9 +292,9 @@ SUCCESS CRITERIA
 ```
 
 ## VS Code Copilot V2
-Runs best with the Copilot CLI
-Best command to start with:
-Run AUTO-DISCOVERY and PASS 1. Create and populate the audit_state files. Use persisted state as the source of truth for all later passes.
+Runs best with the Copilot CLI<br/>
+
+Best command to start with: Run AUTO-DISCOVERY and PASS 1. Create and populate the audit_state files. Use persisted state as the source of truth for all later passes.
 ```text
 VSCode Copilot — Security & Architecture Audit Agent (Stateful, Compact, Auto-Discovery, Monorepo-Aware)
 
