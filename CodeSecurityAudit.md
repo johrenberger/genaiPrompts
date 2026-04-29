@@ -3,7 +3,7 @@
 | ------------- |
 | [VS Code Copilot V1](https://github.com/johrenberger/genaiPrompts/blob/main/CodeSecurityAudit.md#vscode-copilot) |
 | [VS Code Copilot V2](https://github.com/johrenberger/genaiPrompts/blob/main/CodeSecurityAudit.md#vs-code-copilot-v2) |
-| [Continue.dev V1](https://github.com/johrenberger/genaiPrompts/edit/main/CodeSecurityAudit.md#continuedev-version)
+| [Continue.dev V1](https://github.com/johrenberger/genaiPrompts/blob/main/CodeSecurityAudit.md#continuedev-version)
 
 
 ## VSCode Copilot
