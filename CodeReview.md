@@ -408,6 +408,7 @@ Categories:
 Perform a full repository scan, then produce the PostgreSQL database risk analysis report.
 ```
 ## Mock Data Generator
+Sweeps a project a generates a proposed set of mock data generation code to feed test automation
 ```text
 # MOCK DATA GENERATOR — CURSOR/CLAUDE OPTIMIZED (200K TOKEN SAFE)
 
