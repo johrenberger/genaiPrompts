@@ -3,6 +3,7 @@
 | Prompt  | Promp Link |
 | ------------- | ------------- |
 | Database Review | [Database Review](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#database-interaction-assessment) |
+| Mock Data Generator | [Mock Data Generator](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#mock-data-generator) |
 | IDE Code Review  | [IDE Code Review](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#code-review-assistant-when-embedded-in-an-ide)  |
 | IDE Debugging  | [IDE Debugging](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#debug-assistant-when-embedded-in-an-ide)  |
 | Code Review Outside IDE  | [Code Review Outside IDE](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#code-review-assistant-when-not-embedded-in-an-ide)  |
