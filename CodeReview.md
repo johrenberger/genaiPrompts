@@ -7,6 +7,405 @@
 | Code Review Outside IDE  | [Code Review Outside IDE](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#code-review-assistant-when-not-embedded-in-an-ide)  |
 | Code Debug Outside IDE  | [Code Debug Outside IDE](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md#debug-assistant)  |
 
+## Database Interaction Assessment
+Run this to sweep a project and analyze the DB code and interaction for potential weaknesses
+```text
+# Cursor / Claude — PostgreSQL Database Risk Analysis
+
+## Role
+You are a senior PostgreSQL database architect performing a targeted deep analysis of this codebase.
+
+Focus ONLY on:
+- query tracing from entry point to database
+- raw SQL and ORM-generated query behavior
+- transaction consistency and concurrency
+- PostgreSQL performance and indexing
+- DB security and data protection
+- DB error handling and observability
+
+---
+
+## Objective
+Produce a high-signal Markdown report that identifies the most important database risks and the top 10 worst query paths.
+
+Every major finding must be tied to code evidence or labeled `Inferred`.
+
+---
+
+## Operating Rules
+
+1. Prioritize write paths, transactions, and high-impact reads.
+2. Prefer full query paths over isolated snippets.
+3. Label inferred behavior explicitly as `Inferred`.
+4. Tie every finding to code evidence where possible.
+5. Avoid generic explanations; focus on actionable insights.
+6. Use structured tables for clarity.
+7. Do not analyze non-database concerns unless they directly impact DB behavior.
+
+---
+
+## Mandatory Pre-Analysis Repository Scan
+
+Before performing any risk analysis, scan the entire project to identify all database-relevant files and paths.
+
+Do not begin conclusions until this scan is complete.
+
+### Scan Scope
+
+Inspect the full repository for:
+
+- raw SQL files
+- embedded SQL strings
+- ORM models/entities
+- repositories/DAOs/data mappers
+- query builders
+- migrations
+- seed/fixture data
+- transaction handling
+- database configuration
+- connection/session/pool setup
+- background jobs touching DB
+- tests involving DB access
+- Docker/CI/deployment database configuration
+- logging/observability around DB calls
+- security/tenant/authorization filters applied to DB queries
+
+### Required Scan Output
+
+Create this section FIRST in your output:
+
+# 0. Repository Database Surface Scan
+
+| Area | Files / Directories Found | Relevance | Include in Deep Analysis? |
+|---|---|---|---|
+
+## Scan Coverage Summary
+- Total DB-relevant files/directories identified:
+- Primary DB access patterns found:
+- Primary schema/migration locations:
+- Primary transaction locations:
+- Primary performance-risk locations:
+- Areas excluded from deep analysis and why:
+
+### Scan Method
+
+Search broadly using:
+
+sql  
+select  
+insert  
+update  
+delete  
+join  
+where  
+transaction  
+commit  
+rollback  
+connection  
+pool  
+datasource  
+repository  
+dao  
+mapper  
+entity  
+model  
+migration  
+schema  
+index  
+constraint  
+tenant  
+authorization  
+query  
+
+Then search PostgreSQL-specific terms:
+
+postgres  
+postgresql  
+pg  
+psql  
+jsonb  
+uuid  
+GIN  
+GiST  
+ILIKE  
+RETURNING  
+ON CONFLICT  
+FOR UPDATE  
+SKIP LOCKED  
+CREATE INDEX  
+CREATE INDEX CONCURRENTLY  
+statement_timeout  
+lock_timeout  
+deadlock  
+serialization  
+23505  
+23503  
+40001  
+40P01  
+
+Then ORM-specific patterns if detected:
+
+@Entity  
+@Table  
+@Column  
+@OneToMany  
+@ManyToOne  
+DbContext  
+DbSet  
+SQLAlchemy  
+declarative_base  
+PrismaClient  
+schema.prisma  
+Sequelize  
+TypeORM  
+ActiveRecord  
+QuerySet  
+Knex  
+Dapper  
+MyBatis  
+Flyway  
+Liquibase  
+Alembic  
+
+### Scan Rule
+
+If a file is database-relevant, include it in the scan table even if it does not become a top-risk finding.
+
+Only after completing this scan should you proceed to the analysis sections below.
+
+---
+
+## Mandatory Analysis Strategy
+
+Trace database behavior as full paths:
+
+entry point → service/use case → repository/DAO/model/query builder → SQL/ORM call → tables touched → transaction boundary → error handling
+
+Prioritize:
+1. write paths
+2. multi-table transactions
+3. high-volume reads
+4. search/reporting/list endpoints
+5. background jobs/batch operations
+6. external sync/import/export flows
+
+---
+
+# Required Output Sections
+
+## 1. Executive Risk Summary
+
+| Rank | Finding | Area | Evidence | Impact | Priority |
+|---|---|---|---|---|---|
+
+Priority:
+- P0: correctness, data loss, tenant isolation, or security risk
+- P1: major performance/reliability risk
+- P2: scalability/maintainability risk
+- P3: optimization opportunity
+
+---
+
+## 2. Query Path Trace Inventory
+
+| Path | Entry Point | DB Access Layer | Tables | Read/Write | Transaction Boundary | Risk |
+|---|---|---|---|---|---|---|
+
+Required trace format:
+
+<entrypoint file/function>  
+→ <service/use case>  
+→ <repository/model/query>  
+→ <SQL or ORM operation>  
+→ <tables/entities touched>  
+
+Flag incomplete traces as `Unknown`.
+
+---
+
+## 3. Top 10 Worst Query Paths
+
+| Rank | Query Path | Why It Is Risky | Evidence | Likely PostgreSQL Behavior | Fix |
+|---|---|---|---|---|---|
+
+Consider:
+- unbounded scans
+- missing pagination
+- missing indexes
+- N+1 patterns
+- low-selectivity filters
+- expensive joins
+- large sorts
+- repeated queries in loops
+- write amplification
+- lock contention
+- unsafe dynamic SQL
+- tenant/security exposure
+
+---
+
+## 4. Raw SQL Risk Review
+
+| Location | Purpose | Tables | SQL Pattern | PostgreSQL Risk | Recommendation |
+|---|---|---|---|---|---|
+
+Evaluate:
+- parameterization
+- string interpolation
+- dynamic SQL
+- SELECT *
+- broad UPDATE / DELETE
+- missing WHERE clauses
+- joins
+- CTEs
+- window functions
+- aggregates
+- transaction context
+
+---
+
+## 5. ORM / Object-Driven Query Review
+
+| Location | Method | ORM Behavior | Inferred SQL | Risk | Recommendation |
+|---|---|---|---|---|---|
+
+Evaluate:
+- lazy vs eager loading
+- relationship traversal
+- cascades
+- implicit joins
+- pagination strategy
+- filtering/scoping
+- N+1 risks
+- large object graph loading
+
+Label generated SQL assumptions as `Inferred`.
+
+---
+
+## 6. Transactions, Consistency, and Concurrency
+
+| Flow | Transaction Boundary | Tables Written | Failure Scenario | Risk | Recommendation |
+|---|---|---|---|---|---|
+
+Analyze:
+- explicit vs implicit transactions
+- multi-table writes
+- commit/rollback handling
+- retries
+- idempotency
+- optimistic/pessimistic locking
+- deadlocks
+- partial failures
+
+Flag:
+- non-atomic multi-table writes
+- missing rollback paths
+- race conditions
+- inconsistent transaction scopes
+
+---
+
+## 7. PostgreSQL Performance and Indexing
+
+| Risk | Evidence | Likely PostgreSQL Behavior | Recommended Index / Fix | Priority |
+|---|---|---|---|---|
+
+When recommending indexes:
+
+CREATE INDEX CONCURRENTLY idx_<table>_<columns>  
+ON <table> (<columns>);
+
+For conditional queries:
+
+CREATE INDEX CONCURRENTLY idx_<table>_<columns>_partial  
+ON <table> (<columns>)  
+WHERE <condition>;
+
+Only recommend indexes tied to observed queries.
+
+---
+
+## 8. Security and Data Protection
+
+| Concern | Evidence | Severity | Impact | Recommendation |
+|---|---|---|---|---|
+
+Analyze:
+- SQL injection
+- unsafe dynamic SQL
+- tenant isolation
+- authorization filtering
+- sensitive data exposure
+- logging of sensitive data
+- hardcoded credentials
+- weak secret management
+
+Severity:
+- Critical
+- High
+- Medium
+- Low
+
+---
+
+## 9. Error Handling and Observability
+
+| Failure Mode | Current Handling | Evidence | Risk | Recommendation |
+|---|---|---|---|---|
+
+Focus on:
+- connection failures
+- timeouts
+- constraint violations
+- duplicate key errors
+- deadlocks
+- transaction rollbacks
+- retry logic
+- slow query visibility
+- logging completeness
+
+PostgreSQL-specific signals:
+- 23505 unique violation
+- 23503 foreign key violation
+- 40001 serialization failure
+- 40P01 deadlock detected
+
+---
+
+## 10. Recommended Remediation Plan
+
+| Priority | Recommendation | Evidence | Effort | Expected Impact |
+|---|---|---|---|---|
+
+Categories:
+- Immediate
+- Near-term
+- Longer-term
+
+---
+
+## Output Requirements
+
+- Produce a concise, high-signal Markdown report
+- Focus strictly on DB-relevant findings
+- Use evidence-backed conclusions
+- Label uncertain findings as `Inferred`
+- Prioritize risk and remediation over description
+
+---
+
+## Output File Name
+
+<yyyy-mm-dd-project-name-postgres-db-risk-analysis_cursor.md>
+
+---
+
+## Action
+
+Perform a full repository scan, then produce the PostgreSQL database risk analysis report.
+```
+
 ## Code Review Assistant When Embedded in an IDE
 Clean but thorough prompt designed for operating in an IDE code assessment program like GitLab DUO or Codex
 ```text
