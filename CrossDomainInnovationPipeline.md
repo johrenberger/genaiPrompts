@@ -1,5 +1,19 @@
 # Cross-Domain Innovation pipeline
-## Pipeline Designed for Running on Personal Infrastructure
+
+## Command for Pipeline
+```text
+RUN_CROSS_DOMAIN_JOB
+
+Use controller:
+/data/.openclaw/workspace/jobs/cross-domain-pipeline/controller_prompt.md
+
+TOPIC_DISPLAY="People analytics and evidence-based HRM"
+
+DOMAINS="Sports Analytics, Aviation Crew Resource Management, Hospital ICU Burnout, Naval Bridge Resource Management, Air Traffic Control, Emergency Medical Triage, Firefighting Crew Dynamics, Financial Trading Desks, Ant Colony Self-Organization, Military C4ISR Command, Power Grid Load Balancing, Wildlife Migration Patterns, Jazz Ensemble Improvisation, Surgery Team Checklists, Wildfire Firefly Synchronization"
+```
+
+
+## Pipeline Designed for Running on Personal Infrastructure <DEPRECATED>
 ```text
 Run the Cross-Domain Innovation pipeline.
 
