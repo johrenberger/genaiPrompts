@@ -6,6 +6,7 @@ Start with Everyday Prompts to get familiar with common needs, additional pages 
 1. [Everyday Prompts](https://github.com/johrenberger/genaiPrompts/blob/main/EverydayPrompts.md) - Prompts for common, everyday needs<br/>
 2. [News Collection](https://github.com/johrenberger/genaiPrompts/blob/main/NewsCollection.md) - Prompts that structure and organize daily news<br/>
 3. [Prompt Analytics](https://github.com/johrenberger/genaiPrompts/blob/main/PromptAnalytics.md) - Prompts to improve the quality of what you pass to your Gen AI chat to improve the organization and output from Gen AI.<br/>
+4. [Workflow Architecture Optimizer](https://github.com/johrenberger/genaiPrompts/blob/main/WorkflowArchitectureOptimizer.md) - Prompt to generate a comprehensive workflow for OpenClaw, Claude, Codex, CoPilot<br/>
 5. [Security Test Generator](https://github.com/johrenberger/genaiPrompts/blob/main/SecurityTestCodeGenerator.md) - Prompt that scans your app and generates security validation test code <br/>
 6. [Code Review](https://github.com/johrenberger/genaiPrompts/blob/main/CodeReview.md) - Set of prompts for reviewing code<br/>
 7. [Agile Tools](https://github.com/johrenberger/genaiPrompts/blob/main/AgilePrompts.md) - Prompts for assisting in Agile based activities.<br/>
