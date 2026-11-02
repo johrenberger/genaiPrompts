@@ -21,3 +21,4 @@ Start with Everyday Prompts to get familiar with common needs, additional pages 
 16. [Fun Prompts](https://github.com/johrenberger/genaiPrompts/blob/main/FunPrompts.md) - Interesting prompts that provide potentially useful capabilities<br/>
 17. [Incident Response](https://github.com/johrenberger/genaiPrompts/blob/main/IncidentResponse.md) - Prompt for generating Information Security quality incident response documentation.<br/>
 18. [Job Interview](JobInterview.md) - Prompts to generate effective interview questions<br/>
+19. [Skill Assessment](SkillAssessment.md) - Prompts for analyzing an environment's skills and identifying weaknesses in their design. <br/>
